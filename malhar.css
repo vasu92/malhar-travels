@@ -26,6 +26,7 @@ body
 	margin:0;
 	padding:0;
 
+
 }
 html
 {
@@ -42,6 +43,10 @@ a
 	text-decoration:none;
 	cursor:pointer;
 }
+.wrapper
+{
+	width:100%;
+}
 .clearfix
 {
 	display:table;
@@ -51,13 +56,14 @@ a
 .header
 {
 	background:#5A5A62;
-	height:150px;
+	height:160px;
 	width:100%;
 }
 .logo
 {
 clear: both;
     display: table-cell;
+   
 }
 .user_image{
     margin:20px;
@@ -126,7 +132,7 @@ clear: both;
 
 .section
 {
-	height:452px;
+	min-height:500px;
 	width:100%;
 	background:#f1f1f1;
 	
@@ -143,7 +149,7 @@ clear: both;
 {
 	float:left;
 	width:300px;
-	height:372px;
+	height:420px;
 	padding:20px;
 	background:#5A5A62;
 	
@@ -180,7 +186,7 @@ color:white;
     width: 110px;
     float: left;
     height: 145px;
-    margin: 35px 5px 10px 65px;
+    margin: 50px 5px 10px 65px;
 }
 .tableelement1 
 {
@@ -206,7 +212,7 @@ color:white;
 	float: right;
     background: #5A5A62;
     width: 300px;
-    height: 372px;
+    height: 420px;
     padding: 20px;
 }
 .rightcontent h2
@@ -228,19 +234,48 @@ color:white;
 {
 	color:white;;;
 }
-
+.footer
+{
+ 
+    height: 35px;
+    background:gray;
+    margin-top:-22px;
+   
+    
+}
 
 
 @media screen and (min-width:300px) and (max-width:600px)
 {
+body
+{
+padding:0px;
+margin:0px;
+}
 .header
 {
 	width:100%;
 	height:180px;
 }
-.logo
+	.logo
 {
-	display:none;
+	display:block;
+
+}
+.user_image{
+    margin:20px;
+    float:left;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #fff;
+    border-radius: 100%;
+    
+}
+.maintitle
+{
+	float:none;
+	position:absolute;
+	left:20px;
 }
 	
 .maintitle
@@ -278,15 +313,26 @@ padding-top:0px;
 .section
 {
 	width:100%;
-	height:385px;
+	min-height:550px;
+	
+}
+.sectioncontent
+{
+	width:100%;
+	min-height:550px;
+	background:#5A5A62;
+}
+.orangebar
+{
+	width:100%;
 }
 	
 .leftcontent
 {
 	float:none;
-	width:90%;
+	width:100%;
 	height:300px;
-	
+	background:none;
 }
 
 .leftcontent h2
@@ -306,9 +352,10 @@ padding-top:0px;
 .rightcontent
 {
 	float:none;
-	width:90%;
+	width:100%;
 	padding-top:0px;
-	height:160px;
+	height:140px;
+	background:none;
 }
 .rightcontent h2
 {
@@ -370,4 +417,79 @@ padding-top:0px;
 }
 
 	
+}
+@media screen and (min-width:601px) and (max-width:1024px)
+{
+.logo
+{
+	display:block;
+
+}
+.user_image{
+    margin:20px;
+    float:left;
+    width: 80px;
+    height: 80px;
+    border: 3px solid #fff;
+    border-radius: 100%;
+    
+}
+.maintitle
+{
+	float:none;
+	position:absolute;
+	left:150px;
+}
+.header
+{
+	height:250px;
+}
+.paneltitle
+{
+	font-size: 4.5em;
+}
+.panelsubtitle
+{
+	padding-left:30px;
+}
+.contactnumbers1
+{
+	float:left;
+	padding-top:120px;
+	padding-left:40px;
+	font-size:14px;
+	
+}
+.contactnumbers2
+{
+	float:left;
+	padding-top:120px;
+	padding-left:30px;
+	font-size:14px;
+	;
+}
+
+.sectioncontent
+{
+
+  min-height: 460px;
+	width:100%;
+	background:#5A5A62;
+}
+.leftcontent
+{
+	width:355px;
+	padding-right:0px;
+    background:none;
+}
+.rightcontent
+{
+	width:350px;
+	padding-left:20px;
+	background:none;
+}
+
+.middlecontent
+{
+	display:none;
 }
