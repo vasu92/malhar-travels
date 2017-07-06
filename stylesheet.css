@@ -14,6 +14,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	background:#f1f1f1;
+	min-height:100vh;
 }
 ol, ul {
 	vertical-align: text-top;
@@ -38,7 +39,7 @@ a
 }
 header
 {
-	background:#5A5A62;
+	background: #5A5A62;
 }
 .titlebar
 {
@@ -109,11 +110,11 @@ nav ul li{
 	padding-left: 1%;
 	font-family:arial;
 }
+nav ul li>p>a{color: #fff;}
 section
 {
 overflow:hidden;
-width:100%;
-}
+width:100%;min-height: 76vh;background-color: #5A5A62;}
 .orangebar
 {
 	background:rgba(255, 59, 0, 0.63);;
@@ -150,23 +151,19 @@ width:100%;
 {
 	/* display:table-cell; */
 	float:left;
-	width: 37%;
+	width: 42%;
 	background: white;
-	margin: 2% 2%;
+	/* margin: 2% 2%; */
 }
 .servicetable
 {
-
 	width: 29%;
 	/* width: 110px; */
 	float: left;
-	margin: 6% 2%;
-	px;*/
 	margin: 7% 2%;
-}
+	}
 .tableelement1 
 {
-	height: 58px;
     text-align: center;
 }
 .tableelement1 img {
@@ -179,8 +176,8 @@ width:100%;
     font-weight: bold;
     /* height: 65px; */
     text-align: center;
-    line-height:1.5;
-    padding: 12%;
+    line-height: 34px;
+    padding-top: 2%;
 }
 
 
@@ -239,10 +236,11 @@ nav
 		float:none;
 		width:85%;
 		overflow:hidden;
-		margin:1% 0%;
+		margin:1% auto;
 	}
 	nav ul li
 	{
+		text-align:center;
 		font-size:18px;
 		width:39%;
 	} 
@@ -284,10 +282,11 @@ nav
 		float:none;
 		width:85%;
 		overflow:hidden;
-		margin:1% 0%;
+		margin:1% auto;
 	}
 	nav ul li
 	{
+		text-align:center;
 		font-size:16px;
 	}
 	.section_middle
@@ -324,7 +323,10 @@ nav
 		float:none;
 		overflow:hidden;
 		width:78%;
-		margin:1% 0%;
+		margin:1% auto;
+	}
+	nav ul li{
+		text-align:center;
 	}
 	.section_left
 	{
@@ -371,10 +373,11 @@ nav
 		float:none;
 		width:85%;
 		overflow:hidden;
-		margin:1% 0%;
+		margin:1% auto;
 	}
 	nav ul li
 	{
+		text-align:center;
 		font-size:14px;
 	}
 	.section_left
